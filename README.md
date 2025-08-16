@@ -1,61 +1,63 @@
-**Quantitative Portfolio Construction
-**
-**Overview**
+Here’s a cleaner, well-formatted version of your README using **GitHub-flavored Markdown** for clarity and professionalism:
 
+---
+
+# **Quantitative Portfolio Construction**
+
+## 📊 Overview  
 This project implements a two-stage quantitative approach to portfolio construction:
 
-**Stock Screening:** Filters stocks using technical analysis criteria based on Mark Minervini's trading trend
+1. **Stock Screening** – Filters stocks using technical analysis criteria inspired by Mark Minervini’s trading trends.  
+2. **Portfolio Optimization** – Applies Modern Portfolio Theory (Markowitz) to construct optimal portfolios.
 
-**Portfolio Optimization:** Applies Modern Portfolio Theory (Markowitz) to construct optimal portfolios
+---
 
-**Methodology**
-**Stage 1: Stock Screening**
-Screens stocks based on **7 technical criteria**:
+## 🔍 Methodology
 
-Price > 150MA > 200MA
+### **Stage 1: Stock Screening**  
+Screens stocks based on 7 technical criteria:
 
-150MA > 200MA
+- Price > 150-day MA > 200-day MA  
+- 150-day MA > 200-day MA  
+- Current 200-day MA > 200-day MA from 20 days ago  
+- 50-day MA > 150-day MA > 200-day MA  
+- Price > 50-day MA  
+- Price ≥ 1.3 × 52-week low  
+- Price ≥ 0.75 × 52-week high  
 
-Current 200MA > 200MA from 20 days ago
+**Data Source**: 3 years of historical data from Yahoo Finance  
+**Output**: List of qualifying stocks with key metrics
 
-50MA > 150MA > 200MA
+---
 
-Price > 50MA
+### **Stage 2: Portfolio Optimization**  
+Implements **Markowitz Mean-Variance Optimization**:
 
-Price ≥ 1.3×52-week low
+- Calculates expected returns and covariance matrix  
+- Runs Monte Carlo simulation (100,000 portfolios)  
+- Identifies optimal portfolio with **maximum Sharpe ratio**  
+- Visualizes the **efficient frontier**
 
-Price ≥ 0.75×52-week high
+---
 
-Uses 3 years of historical data from Yahoo Finance
+## 🧠 Key Concepts
 
-Outputs qualifying stocks with key metrics
+- **Moving Averages**: 50-day, 150-day, 200-day SMAs  
+- **Trend Analysis**: Price relative to moving averages  
+- **Markowitz Portfolio Theory**: Risk-return optimization  
+- **Efficient Frontier**: Optimal risk-return combinations  
+- **Sharpe Ratio**: Risk-adjusted return metric
 
-**Stage 2: Portfolio Optimization**
-Implements Markowitz Mean-Variance Optimization
+---
 
-Calculates expected returns and covariance matrix
+## ⚙️ Dependencies
 
-Runs Monte Carlo simulation (100,000 portfolios)
+- Python 3.8+  
+- `pandas`  
+- `numpy`  
+- `yfinance`  
+- `matplotlib`
 
-Identifies optimal portfolio with maximum Sharpe ratio
+---
 
-Visualizes efficient frontier
-
-****Key Concepts**
-****Moving Averages:** 50-day, 150-day, 200-day SMAs
-
-**Trend Analysis** Price relative to moving averages
-
-**Markowitz Portfolio Theory:** Construction of portfolio based on risk-return optimization
-
-**Efficient Frontier:** Optimal risk-return combinations for different protfolio weights
-
-**Sharpe Ratio:** Metric to indicate risk-adjusted return 
-
-
-Dependencies
-Python 3.8+
-pandas
-numpy
-yfinance
-matplotlib
+Let me know if you'd like help adding usage instructions, sample outputs, or visualizations!
