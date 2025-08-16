@@ -2,15 +2,25 @@
 
 # **Quantitative Portfolio Construction**
 
-## 📊 Overview  
-This project implements a two-stage quantitative approach to portfolio construction:
+## Overview  
+This project implements a two-stage quantitative approach to portfolio construction on NIFTY stocks:
 
 1. **Stock Screening** – Filters stocks using technical analysis criteria inspired by Mark Minervini’s trading trends.  
 2. **Portfolio Optimization** – Applies Modern Portfolio Theory (Markowitz) to construct optimal portfolios.
 
 ---
 
-## 🔍 Methodology
+## Project Outcomes
+
+- Constructed a **tangency portfolio** using Monte Carlo simulations and Markowitz theory, achieving a **24.3% return in 2024**.
+- Outperformed the **NIFTY100 benchmark by 11.1%**, demonstrating strong relative performance.
+- Achieved a **Sharpe Ratio of 2.88**, indicating high risk-adjusted returns.
+
+---
+
+Let me know if you'd like to include visual comparisons or charts to showcase these results!
+
+## Methodology
 
 ### **Stage 1: Stock Screening**  
 Screens stocks based on 7 technical criteria:
@@ -38,7 +48,7 @@ Implements **Markowitz Mean-Variance Optimization**:
 
 ---
 
-## 🧠 Key Concepts
+## Key Concepts
 
 - **Moving Averages**: 50-day, 150-day, 200-day SMAs  
 - **Trend Analysis**: Price relative to moving averages  
@@ -48,9 +58,9 @@ Implements **Markowitz Mean-Variance Optimization**:
 
 ---
 
-## ⚙️ Dependencies
+## Dependencies
 
-- Python 3.8+  
+- Python  
 - `pandas`  
 - `numpy`  
 - `yfinance`  
