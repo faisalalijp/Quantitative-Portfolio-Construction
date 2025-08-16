@@ -1,6 +1,4 @@
-Here’s a cleaner, well-formatted version of your README using **GitHub-flavored Markdown** for clarity and professionalism:
 
----
 
 # **Quantitative Portfolio Construction**
 
