@@ -1,6 +1,6 @@
-****Quantitative Portfolio Construction
-
-****Overview
+**Quantitative Portfolio Construction
+**
+**Overview**
 
 This project implements a two-stage quantitative approach to portfolio construction:
 
