@@ -58,6 +58,18 @@ Implements **Markowitz Mean-Variance Optimization**:
 
 ---
 
+## Repository Explanation
+
+- **Markowitz.py**: 
+  - **Input**: A CSV or Excel file containing a column named 'Stock' with stock tickers.
+  - **Output**: Calculates optimal portfolio weights using the Markowitz model via Monte Carlo simulation, prints the optimal weights, portfolio return, risk, and Sharpe ratio, and generates a scatter plot visualizing portfolio return vs. volatility, colored by Sharpe ratio.
+
+- **Stock selection.py**: 
+  - **Input**: A CSV or Excel file with a column named 'Symbol' containing stock tickers.
+  - **Output**: Screens stocks based on technical criteria (e.g., moving averages, 52-week high/low), outputs a list of qualifying stocks with metrics like 50/150/200-day moving averages and current price, and saves results to a CSV file named "ScreenOutput.csv".
+
+---
+
 ## Dependencies
 
 - Python  
@@ -66,6 +78,3 @@ Implements **Markowitz Mean-Variance Optimization**:
 - `yfinance`  
 - `matplotlib`
 
----
-
-Let me know if you'd like help adding usage instructions, sample outputs, or visualizations!
